@@ -55,7 +55,7 @@
 
            
             <div id="mobile-menu" class="lg:hidden hidden">
-                {{-- backdrop --}}
+                
                 <div class="fixed inset-0 z-40 bg-black/50" onclick="document.getElementById('mobile-menu').classList.add('hidden')"></div>
 
                 <div class="fixed inset-y-0 right-0 z-50 w-full max-w-sm overflow-y-auto bg-gray-900 p-6 sm:ring-1 sm:ring-gray-100/10">
@@ -74,24 +74,11 @@
                             </svg>
                         </button>
                     </div>
-
-                    <div class="mt-6 flow-root">
-                        <div class="-my-6 divide-y divide-white/10">
-                            <div class="space-y-2 py-6">
-                                <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Home</a>
-                                <a href="/prueba" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Prueba</a>
-                                <a href="/contactenos" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white hover:bg-white/5">Contáctenos</a>
-                            </div>
-                            <div class="py-6">
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-white hover:bg-white/5">Log in</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
 
-        <!-- Hero / main content -->
+      
         <main class="relative isolate px-6 pt-32 lg:px-8 flex-1">
             <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                 <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
@@ -99,12 +86,13 @@
             </div>
 
             <div class="max-w-3xl mx-auto text-center">
-                @isset($heading)
-                    <h1 class="text-4xl text-amber-100 pt-4">{{ $heading }}</h1>
-                @endisset
+                
+                <h1 class="text-4xl text-amber-100 pt-4">{{ $heading }}</h1>
 
                 <div class="mt-6">
+                    
                     {{ $slot }}
+                    
                 </div>
 
                 <div class="mt-10 flex items-center justify-center gap-x-6">
