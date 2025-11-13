@@ -17,8 +17,8 @@
                 <div class="flex lg:flex-1">
                     <a href="/" class="-m-1.5 p-1.5 inline-flex items-center">
                         <span class="sr-only">Mi aplicación</span>
-                        <img src="https://www.bing.com/images/search?view=detailV2&ccid=ed86cawr&id=A6306E36F0048A92B16B5B490DD8BC9CC65E8820&thid=OIP.ed86cawrBkY3giq3rmx5_gHaFj&mediaurl=https%3a%2f%2fmir-s3-cdn-cf.behance.net%2fproject_modules%2ffs%2f42fc51156404767.63667941b76cc.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.79df3a71ac2b064637822ab7ae6c79fe%3frik%3dIIhexpy82A1JWw%26pid%3dImgRaw%26r%3d0&exph=1440&expw=1920&q=logo&FORM=IRPRST&ck=60D5104837760494E64C01D5D252A7B6&selectedIndex=21&itb=0"
-                             alt="Logo" class="h-12 w-auto" />
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.i3gGpLrSXLhn13CWa9B_6QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                             alt="Logo" class="h-20 w-auto" />
                     </a>
                 </div>
 
@@ -44,7 +44,7 @@
                     <nav class="flex items-center gap-4">
                         <x-navlink href="/">Home</x-navlink>
                         <x-navlink href="/prueba">Prueba</x-navlink>
-                        <x-navlink href="/contactenos">Contactenos</x-navlink>
+                        <x-navlink href="/coctatenos">Contactenos</x-navlink>
                     </nav>
                 </div>
 
@@ -62,7 +62,7 @@
                     <div class="flex items-center justify-between">
                         <a href="/" class="-m-1.5 p-1.5 inline-flex items-center">
                             <span class="sr-only">Mi aplicación</span>
-                            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.i3gGpLrSXLhn13CWa9B_6QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3    "
                                  alt="Logo" class="h-8 w-auto" />
                         </a>
 
