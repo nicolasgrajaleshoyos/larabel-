@@ -8,7 +8,6 @@
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
-    
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex flex-col">
 
@@ -37,8 +36,8 @@
             <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-            </div>
-
+            </div>            
+            
             {{-- LINKS DESKTOP --}}
             <div class="hidden lg:flex lg:gap-x-12 items-center">
                 <x-navlink href="/" type="enlace">Home</x-navlink>
@@ -47,8 +46,7 @@
                 <x-navlink href="/empleo" type="enlace">Empleo</x-navlink>
                
             </div>
-
-     {{-- LOGIN --}}
+                {{-- LOGIN --}}
 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
     <a href="/admin/login"
        class="flex items-center gap-2 text-sm font-semibold text-white hover:text-gray-300 transition-colors duration-200">
@@ -66,8 +64,6 @@
         <span>Login</span>
     </a>
 </div>
-
-
 
         </nav>
           <el-disclosure id="mobile-menu" hidden class="block sm:hidden border-t border-white/10 bg-gray-900">
@@ -94,6 +90,8 @@
             <div class="mt-6">{{ $slot }}</div>
         </div>
     </main>
+
+
 
     {{-- FOOTER --}}
     <footer class="py-6 text-center text-sm text-gray-300">
