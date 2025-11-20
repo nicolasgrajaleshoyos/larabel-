@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Empleo;
-$empleos = Empleo::all();
+use App\Models\job;
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,14 +17,14 @@ Route::get('/prueba', function () {
 Route::get('/coctatenos', function () {
     return view('contac');
 });
-Route::get('/empleo', function () use ($empleos){
+Route::get('/empleo', function () {
     return view('empleo', [
-        'empleos' => $empleos
+        'empleos' => job::all()
     ]);
 });
 
-Route::get('/empleo/{id}', function ($id) use ($empleos) {
-    $empleo = Empleo::find($id);
+Route::get('/empleo/{id}', function ($id) {
+    $empleo = job::find($id);
     return view('empleo-detalle', [
         'empleo' => $empleo
     ]);

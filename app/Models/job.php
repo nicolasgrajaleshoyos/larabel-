@@ -2,10 +2,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Empleo  extends Model
+class job  extends Model
 
     {
+        use HasFactory;
+        
         protected $table = 'job_list';//para que los datos se puedan modificar 
         protected $fillable = [
             'title',
