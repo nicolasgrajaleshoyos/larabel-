@@ -89,14 +89,15 @@
             <h1 class="text-4xl text-amber-100 pt-4">{{ $heading }}</h1>
             <div class="mt-6">{{ $slot }}</div>
         </div>
-    </main>
-
-
+</main>
 
     {{-- FOOTER --}}
     <footer class="py-6 text-center text-sm text-gray-300">
         &copy; {{ date('Y') }} Mi aplicación
     </footer>
 
+        
 </body>
+
+<
 </html>
