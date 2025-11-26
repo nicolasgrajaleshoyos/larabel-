@@ -14,4 +14,10 @@ class Employer extends Model
         'name',
         'companyEmail',
     ];
+
+    public function job()
+    {
+        return $this->hasMany(Job::class,'company_id');
+    }
+
 }
