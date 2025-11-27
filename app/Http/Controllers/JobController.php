@@ -10,8 +10,8 @@ class JobController extends Controller
    
     public function index()
     {
-        $jobs = job::all();
-        return view('jobs',['jobs' => $jobs]);
+        $job = job::with('employer')->get();
+        return view('job',['job' => $job]);
     }
     
     public function show($id)

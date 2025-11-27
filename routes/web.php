@@ -20,7 +20,7 @@ Route::get('/coctatenos', function () {
 });
 Route::get('/empleo', function () {
     return view('empleo', [
-        'empleos' => job::all()
+        'empleos' => job::with('employer')->get()
     ]);
 });
 

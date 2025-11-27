@@ -71,7 +71,7 @@ class JobFactory extends Factory
         ];
 
         return [
-            'company_id' => null, // Hacemos que sea nullable
+            'company_id' => Employer::factory(),
             'title' => fake()->randomElement($titles),
             'company' => fake()->randomElement($companies),
             'location' => fake()->randomElement($cities),
