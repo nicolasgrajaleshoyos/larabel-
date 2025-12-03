@@ -43,7 +43,7 @@
                 <x-navlink href="/" type="enlace">Home</x-navlink>
                 <x-navlink href="/prueba" type="enlace">Prueba</x-navlink>
                 <x-navlink href="/coctatenos" type="boton">Contactenos</x-navlink>
-                <x-navlink href="/empleo" type="enlace">Empleo</x-navlink>
+                <x-navlink href="/empleos" type="enlace">Empleo</x-navlink>
                
             </div>
                 {{-- LOGIN --}}
@@ -71,7 +71,7 @@
           <x-navlink href="/" type='responsivo'>Home</x-navlink>
             <x-navlink href="/acercade" type='responsivo'>Acerca de</x-navlink>
             <x-navlink href="/contactenos" type='responsivo'>Contáctenos</x-navlink>
-            <x-navlink href="/empleo" type='responsivo'>Empleo</x-navlink>
+            <x-navlink href="https://test.test/empleos" type='responsivo'>Empleo</x-navlink>
         </div>
     </el-disclosure>
     </header>

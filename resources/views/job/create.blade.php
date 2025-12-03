@@ -27,22 +27,25 @@
             <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
           @enderror
         </div>
-
-        <!-- Empresa -->
+        <!-- Empleador -->
         <div class="mb-4">
-          <label for="company" class="block text-sm font-medium text-gray-200 mb-2">
-            Empresa <span class="text-red-400">*</span>
+          <label for="employer_id" class="block text-sm font-medium text-gray-200 mb-2">
+            Empleador <span class="text-red-400">*</span>
           </label>
-          <input 
-            type="text" 
-            id="company" 
-            name="company" 
+          <select 
+            id="employer_id" 
+            name="employer_id" 
             required
-            value="{{ old('company') }}"
-            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition placeholder-gray-400"
-            placeholder="Ej: Tech Solutions"
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
           >
-          @error('company')
+            <option value="" class="bg-gray-700">Seleccione un empleador</option>
+            @foreach($employers as $employer)
+              <option value="{{ $employer->id }}" {{ old('employer_id') == $employer->id ? 'selected' : '' }} class="bg-gray-700">
+                {{ $employer->name }}
+              </option>
+            @endforeach
+          </select>
+          @error('employer_id')
             <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
           @enderror
         </div>

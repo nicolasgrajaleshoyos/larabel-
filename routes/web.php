@@ -18,11 +18,7 @@ Route::get('/prueba', function () {
 Route::get('/coctatenos', function () {
     return view('contac');
 });
-Route::get('/empleo', function () {
-    return view('empleo', [
-        'empleos' => job::with('employer')->get()
-    ]);
-});
+
 
 // Ruta para mostrar el formulario de crear empleo
 Route::get('/empleo/crear', [JobController::class, 'create'])->name('empleo.create');
@@ -31,13 +27,14 @@ Route::get('/empleo/crear', [JobController::class, 'create'])->name('empleo.crea
 Route::post('/empleo', [JobController::class, 'store'])->name('empleo.store');
 
 // Ruta para ver el detalle de un empleo
-Route::get('/empleo/{id}', [JobController::class, 'showDetalle'])->name('empleo.detalle');
 
-Route::get('/empleos',[JobController::class, 'idex'])->name('jobs.index'); 
-Route::get('/empleos/{id}',[JobController::class, 'show'])->name('jobs.show'); 
+
+Route::get('/empleos',[JobController::class, 'index'])->name('jobs.index'); 
 Route::get('/empleos/create',[JobController::class, 'create'])->name('jobs.create');   
 Route::post('/empleos/crate',[JobController::class, 'store'])->name('jobs.store'); 
+Route::get('/empleos/{id}',[JobController::class, 'show'])->name('jobs.show'); 
 Route::get('/empleos/{id}/edit',[JobController::class, 'edit'])->name('jobs.edit'); 
+Route::get('/empleo/{id}', [JobController::class, 'showDetalle'])->name('empleo.detalle');
 Route::put('/empleos/{id}',[JobController::class, 'update'])->name('jobs.update');
 Route::delete('/empleos/{id}',[JobController::class, 'destroy'])->name('jobs.delete');
 

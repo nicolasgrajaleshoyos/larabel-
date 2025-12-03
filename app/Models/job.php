@@ -8,21 +8,24 @@ class Job extends Model
 {
     use HasFactory;
     
-    protected $table = 'job_list';//para que los datos se puedan modificar 
+    protected $table = 'job_list';
+    
     protected $fillable = [
         'title',
         'company',
         'location',
         'description',
         'salary',
+        'company_id',
     ];
 
     public function employer()
     {
-        return $this->belongsTo(Employer::class,'company_id');
+        return $this->belongsTo(Employer::class, 'company_id');
     }
+    
     public function tags()
     {
-        return $this->belongsToMany(Tag::class,'job_tag','job_listing_id','tag_id');
+        return $this->belongsToMany(Tag::class, 'job_tag', 'job_listing_id', 'tag_id');
     }
 }
